@@ -11,15 +11,18 @@
         <a href="ejemplo2.html">Next</a><br>
         <h1>Registro de cliente</h1>
         <form action="#" method="POST">
-            <label>Nombre</label>
-            <input placeholder="nombre" type="text" name="nombre" value="" size="20" />
-            <br>
-            <label>Apellidos</label>
-            <input placeholder="apellidos" type="text" name="apellidos" value="" size="30" />
-            <br>
-            <label>Nombre</label>
-            <input placeholder="correo@abc.com" type="email" name="correo" value="" size="15" />
-            <br>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Nombre</span>
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="addon-wrapping">
+            </div>            <br>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Apellidos</span>
+                <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos" aria-describedby="addon-wrapping">
+            </div>            <br>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Correo</span>
+                <input type="text" class="form-control" placeholder="Correo@gmail.com" aria-label="Nombre" aria-describedby="addon-wrapping">
+            </div>            <br>
             <input type="submit" value="Registrar" />
         </form>
     </body>
