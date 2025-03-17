@@ -79,4 +79,16 @@ public class PruebasController {
         model.addAttribute("precioSup", precioSup);
         return "/pruebas/listado2";
     }
+    
+    @PostMapping("/queryPorId")
+    public String consultaPorId(@RequestParam(value = "idInicio") Long idInicio,
+                           @RequestParam(value = "idFin") Long idFin, 
+                           Model model) {
+        var productos = productoService.findByIdProductoBetweenOrderByDescripcion(idInicio, idFin);
+        model.addAttribute("productos", productos);
+        model.addAttribute("totalProductos", productos.size());
+        model.addAttribute("idInicio", idInicio);
+        model.addAttribute("idFin", idFin);
+        return "/pruebas/listado2";
+    }
 }
