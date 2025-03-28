@@ -33,8 +33,8 @@ public class UsuarioDetailsServiceImpl implements UsuarioDetailsService, UserDet
         session.setAttribute("usuarioImagen", usuario.getRutaImagen());
         //Si está acá es porque existe el usuario... sacamos los roles que tiene
         var roles = new ArrayList<GrantedAuthority>();
-        for (Rol rol : usuario.getRoles()) {    //Se sacan los roles
-            roles.add(new SimpleGrantedAuthority(rol.getNombre()));
+        for (Rol rol : usuario.getRoles()) {    
+        roles.add(new SimpleGrantedAuthority("ROLE_" + rol.getNombre()));
         }
         //Se devuelve User (clase de UserDetails)
         return new User(username, usuario.getPassword(), roles);
