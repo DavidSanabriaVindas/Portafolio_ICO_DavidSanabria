@@ -2,8 +2,8 @@ package Portafolio.Portafolio.controller;
 
 import Portafolio.Portafolio.domain.Item;
 import Portafolio.Portafolio.domain.Producto;
-import Portafolio.Portafolio.services.ItemService;
-import Portafolio.Portafolio.services.ProductoService;
+import Portafolio.Portafolio.service.ItemService;
+import Portafolio.Portafolio.service.ProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -13,8 +13,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
-import com.tienda.dao.ProductoDao;
-import com.tienda.dao.UsuarioDao;
+import Portafolio.Portafolio.dao.ProductoDao;
+import Portafolio.Portafolio.dao.UsuarioDao;
 import jakarta.servlet.http.HttpSession;
 import java.util.ArrayList;
 
